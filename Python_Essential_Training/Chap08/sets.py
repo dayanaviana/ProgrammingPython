@@ -7,6 +7,17 @@ def main():
     print_set(a)
     print_set(b)
 
+    print_set(sorted(a))
+
+    print_set(a - b)
+
+    print_set(a | b)
+
+    # a or b, but not both
+    print_set(a ^ b)
+
+    print_set(a & b)
+
 def print_set(o):
     print('{', end = '')
     for x in o: print(x, end = '')

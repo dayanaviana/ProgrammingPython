@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # Copyright 2009-2017 BHG http://bw.org/
 
+#especial class function that serves as an iterator
+# instead of returning a single value, a generator returns a stream of values
+
 def main():
     for i in inclusive_range(25):
         print(i, end = ' ')
@@ -25,7 +28,7 @@ def inclusive_range(*args):
     # generator
     i = start
     while i <= stop:
-        yield i
+        yield i # yield = return, but used for generator
         i += step
 
 if __name__ == '__main__': main()

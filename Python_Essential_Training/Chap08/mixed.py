@@ -5,11 +5,18 @@
 dlevel = 0 # manage nesting level
 
 def main():
+    # range
     r = range(11)
+    #list
     l = [ 1, 'two', 3, {'4': 'four' }, 5 ]
+    #tuple
     t = ( 'one', 'two', None, 'four', 'five' )
+    #set
     s = set("It's a bird! It's a plane! It's Superman!")
+    #dictionary
     d = dict( one = r, two = l, three = s )
+    
+    #list od different structures
     mixed = [ l, r, s, d, t ]
     disp(mixed)
 
